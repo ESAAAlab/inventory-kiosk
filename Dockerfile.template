@@ -4,7 +4,11 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install -y \
     matchbox \
+    xserver-xorg-core \
     x11-xserver-utils \
+    xserver-xorg-video-fbdev \
+    xserver-xorg-input-all \
+    xinput \
     xwit \
     fbset \
     gnome-keyring \
