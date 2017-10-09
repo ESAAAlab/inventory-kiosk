@@ -34,6 +34,8 @@ RUN apt-get update && apt-get install -y \
     unclutter \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
+RUN L='fr' && sudo sed -i 's/XKBLAYOUT=\"\w*"/XKBLAYOUT=\"'$L'\"/g' /etc/default/keyboard
+
 ENV INITSYSTEM on
 COPY start.sh start.sh
 COPY src/ /usr/src/app
