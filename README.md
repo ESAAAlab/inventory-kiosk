@@ -36,3 +36,5 @@ DEFAULT_URL : 'http://192.168.x.x:3050'
 ---
 
 Based on [resin-hosted-kiosk](https://github.com/drewsimon/resin-hosted-kiosk)
+
+[resin-link]:https://resin.io/
